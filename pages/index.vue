@@ -453,10 +453,10 @@ const closeModalDetail = () => {
 
   <div v-if="modalDetail.isOpen">
     <div
-      class="fixed inset-0 z-[100] bg-black/75 flex items-center justify-center"
+      class="fixed text-[#EEEEEE] inset-0 z-[100] bg-black/75 flex items-center justify-center"
     >
       <div
-        class="bg-white w-[60%] h-[320px] p-4 gap-6 rounded-lg shadow-md flex"
+        class="bg-[#7E7474] w-[60%] h-[320px] p-4 gap-6 rounded-lg shadow-md flex"
       >
         <div cla>
           <img
@@ -466,30 +466,30 @@ const closeModalDetail = () => {
           />
         </div>
         <div>
-          <h2 class="text-xl font-semibold mb-4">
+          <h2 class="text-2xl font-semibold mb-4">
             {{ bookStore.books[modalDetail.index].title }}
           </h2>
-          <p class="text-gray-600 mb-4">
+          <p class="text-[#dedede] mb-4">
             {{ bookStore.books[modalDetail.index].description }}
           </p>
           <div class="flex gap-6">
             <div>
               <p>
-                <strong>Release Year:</strong>
+                <span class="font-semibold">Release Year:</span>
                 {{ bookStore.books[modalDetail.index].release_year }}
               </p>
               <p>
-                <strong>Price:</strong>
+                <span class="font-semibold">Price:</span>
                 {{ bookStore.books[modalDetail.index].price }}
               </p>
             </div>
             <div>
               <p>
-                <strong>Total Pages:</strong>
+                <span class="font-semibold">Total Pages:</span>
                 {{ bookStore.books[modalDetail.index].total_page }}
               </p>
               <p>
-                <strong>Category ID:</strong>
+                <span class="font-semibold">Category ID:</span>
                 {{ bookStore.books[modalDetail.index].category_id }}
               </p>
             </div>
@@ -497,7 +497,7 @@ const closeModalDetail = () => {
 
           <button
             @click="closeModalDetail"
-            class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600 transition mt-4"
+            class="bg-[#FFDD93] text-white px-4 py-2 rounded-md hover:bg-[#e9c986] focus:outline-none focus:bg-gray-600 transition mt-4"
           >
             Tutup
           </button>
