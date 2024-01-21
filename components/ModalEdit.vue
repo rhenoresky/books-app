@@ -35,14 +35,14 @@ async function editBook(id, token, bookValue) {
       <slot></slot>
       <div class="flex justify-center gap-4 mt-8">
         <button
-          class="px-4 py-1 rounded text-slate-50 ring-1 ring-slate-50 bg-red-500"
+          class="px-4 py-1 rounded text-slate-50 ring-1 ring-slate-50"
           @click="emit('cancelEdit')"
         >
           Batal
         </button>
         <button
           type="submit"
-          class="px-4 py-1 rounded text-slate-50 ring-1 ring-slate-50 bg-green-500"
+          class="px-4 py-1 rounded text-slate-50 ring-1 ring-slate-50 bg-[#FFDD93]"
         >
           Kirim
         </button>
